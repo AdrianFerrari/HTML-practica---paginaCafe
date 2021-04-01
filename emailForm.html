@@ -10,16 +10,30 @@
       }
     </style>
   </head>
+  
   <body>
     <h1>Contact Us</h1>
     <p>Use the following form to send a message to Example Cafe</p>
+    
+    <fieldset>
+      <legend>Your message:</legend>
     <table style="width:100%">
+      <tr>
+        <th>To</th>
+        <td>
+          <form>
+            <label>
+              <input type="text" name="destination" placeholder="Example Cafe" readonly>
+            </label>
+          </form>
+        <td>
+      </tr>
       <tr>
         <th>Your email</th>
         <td>
           <form method="GET" action="#">
             <label for="email"></label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" tabindex="0">
           </form>
         </td>
       </tr>
@@ -28,10 +42,16 @@
         <td>
           <form method="GET" action="#">
             <label for="mesagge"></label>
-            <textarea id="mesagge" name="mesagge" cols="30" rows="13"></textarea>
+            <textarea id="mesagge" name="mesagge" cols="30" rows="13" tabindex="1"></textarea>
           </form>
         </td>
       </tr>
+    </table>
+    </fieldset>
+    
+    <fieldset>
+      <legend>How you found us:</legend>
+    <table style="width:100%">
       <tr>
         <th>How did you hear of us</th>
         <td>
@@ -62,5 +82,7 @@
         </td>
       </tr>
     </table>
+    </fieldset>
+    
   </body>
 </html>
